@@ -1,0 +1,20 @@
+{
+    "name": "Juleb - Master Product Customize",
+    "summary": "Master Product Customize",
+    "category": "Uncategorized",
+    "version": "16.0.0.1.0",
+    "author": "Muhammad Rizqi",
+    "maintainers": ["muhrizky"],
+    "website": "https://github.com/muhrizky/inventory16",
+    "license": "LGPL-3",
+    "depends": ["stock"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/import_product_wizard.xml",
+        "views/menu.xml",
+    ],
+    "auto_install": False,
+    "installable": True,
+    "application": False,
+    "external_dependencies": {"python": []},
+}

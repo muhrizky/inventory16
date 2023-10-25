@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="import_product_wizard_form_wizard" model="ir.ui.view">
+            <field name="name">import.product.bulk.form_wizard</field>
+            <field name="model">import.product.bulk</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="excel_upload"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Download Template" class="oe_link" type="object" name="download_template"/>
+                        <button name="upload_template"
+                            string="Process Data"
+                            type="object"
+                            class="oe_highlight"
+                            icon="fa-check"
+                            />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="import_product_wizard_action">
+            <field name="name">Import Product Bulk</field>
+            <field name="res_model">import.product.bulk</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
